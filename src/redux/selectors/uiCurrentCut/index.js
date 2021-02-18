@@ -1,0 +1,1 @@
+export const currentCutNameSelector = state => state.currentCutName;
