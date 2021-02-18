@@ -1,29 +1,27 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import InputBase from '@material-ui/core/InputBase';
+import {
+    CircularProgress,
+    Typography,
+    IconButton,
+    InputBase,
+    Toolbar,
+    AppBar,
+    Button
+} from '@material-ui/core';
 import {useStyles} from './makeStyles'
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
-import {useSelector} from 'react-redux';
-import {useDrawer} from '../../../context';
-import {mainLogoSelector} from '../../../redux/selectors/main-logo'
-import CircularProgress from '@material-ui/core/CircularProgress';
-import Button from '@material-ui/core/Button';
-import Icon from '@material-ui/core/Icon';
 import {Email} from '@material-ui/icons';
-
+import {useSelector} from 'react-redux';
+import {useContextData} from '../../../context';
+import {mainLogoSelector} from '../../../redux/selectors/main-logo';
 
 export default function SearchAppBar() {
-
-    const {toggleDrawer} = useDrawer();
+    const {toggleDrawer, toggleContact, setSearchedCardsName} = useContextData();
     const classes = useStyles();
-    const {data:mainLogo, isLoading} = useSelector((state)=> mainLogoSelector(state));
+    const {data: mainLogo, isLoading} = useSelector((state) => mainLogoSelector(state));
 
     return (
-
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
@@ -37,7 +35,8 @@ export default function SearchAppBar() {
                         <MenuIcon/>
                     </IconButton>
                     <Typography className={classes.title} variant="h6" color="inherit">
-                        {isLoading ? <CircularProgress  color="white"/> :  <img className={classes.mainLogo} src={mainLogo} alt={'logo'}/>}
+                        {isLoading ? <CircularProgress color="inherit"/> :
+                            <img className={classes.mainLogo} src={mainLogo} alt={'logo'}/>}
                     </Typography>
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>
@@ -50,15 +49,16 @@ export default function SearchAppBar() {
                                 input: classes.inputInput,
                             }}
                             inputProps={{'aria-label': 'search'}}
+                            onChange={(ev) => setSearchedCardsName(ev)}
                         />
 
                     </div>
-
                     <Button
                         variant="contained"
                         color="primary"
                         className={classes.button}
-                        startIcon={<Email />}
+                        onClick={toggleContact()}
+                        startIcon={<Email/>}
                     >
                         Email
                     </Button>

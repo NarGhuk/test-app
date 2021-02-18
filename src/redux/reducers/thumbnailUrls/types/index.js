@@ -1,1 +1,1 @@
-export const CATEGORIES = 'CATEGORIES';
+export const THUMBNAIL_URL = 'THUMBNAIL_URL';

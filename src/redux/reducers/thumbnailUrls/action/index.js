@@ -1,20 +1,20 @@
-import {CATEGORIES} from '../types';
+import {THUMBNAIL_URL} from '../types';
 import {get} from '../../../../services/http-api.service';
 import {COMON_TYPES} from '../../../comonTypes';
 
-const PREFIX_URL = `content-app-cats/jVV3Q?appId=2731&eventId=2570`;
+const PREFIX_URL = `content-thumbnail-url/2731`;
 
-export const fetchCategories = async dispatch => {
-    dispatch({type: `${CATEGORIES}_${COMON_TYPES.PENDING}`});
+export const fetchThumbnailData = async dispatch => {
+    dispatch({type: `${THUMBNAIL_URL}_${COMON_TYPES.PENDING}`});
     try {
-        const cat = await get(PREFIX_URL);
+        const data = await get(PREFIX_URL);
         dispatch({
-            type:`${CATEGORIES}_${COMON_TYPES.DONE}`,
-            payload: cat
+            type:`${THUMBNAIL_URL}_${COMON_TYPES.DONE}`,
+            payload: data
         })
     } catch (err) {
         dispatch({
-            type:`${CATEGORIES}_${COMON_TYPES.REJECTED}`,
+            type:`${THUMBNAIL_URL}_${COMON_TYPES.REJECTED}`,
             payload: err,
             error: true
         })

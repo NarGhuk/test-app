@@ -1,0 +1,1 @@
+export const thumbnailUrlsSelector = state => state.thumbnailUrls;

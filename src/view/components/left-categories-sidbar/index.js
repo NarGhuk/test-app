@@ -1,21 +1,27 @@
 import React from 'react';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import {useDrawer} from '../../../context';
-import Drawer from '@material-ui/core/Drawer';
-import IconButton from '@material-ui/core/IconButton';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import {
+    ListItemText,
+    CssBaseline,
+    IconButton,
+    ListItem,
+    Divider,
+    Drawer,
+    List
+} from '@material-ui/core';
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import {useSelector} from 'react-redux';
+import {categoriesListNameSelector} from '../../../redux/selectors/categories-name-list';
+import {useContextData} from '../../../context';
+import {useDispatch} from 'react-redux';
+import {setCurrentCut} from '../../../redux/reducers/uiReduserCurrentCat/action-creators';
 import {useStyles} from './makeStyles';
-import {categoriesSelector} from '../../../redux/selectors/categories';
 
 export default function LeftBarCategories() {
+    const dispatch = useDispatch();
     const classes = useStyles();
-    const {toggleDrawer, visible} = useDrawer();
-    const categorise = useSelector((state) => categoriesSelector(state) );
+    const {toggleDrawer, visible} = useContextData();
+    const categoriseList = useSelector((state) => categoriesListNameSelector(state));
+
     return (
         <div className={classes.root}>
             <CssBaseline/>
@@ -35,9 +41,9 @@ export default function LeftBarCategories() {
                 </div>
                 <Divider/>
                 <List>
-                    {categorise.map((item) => (
+                    {categoriseList.map((item) => (
                         <ListItem button key={item.name}>
-                            <ListItemText  primary={item.name}/>
+                            <ListItemText primary={item.name} onClick={() => dispatch(setCurrentCut(item.name))}/>
                         </ListItem>
                     ))}
                 </List>

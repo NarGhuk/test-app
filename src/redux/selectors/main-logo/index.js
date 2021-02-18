@@ -1,0 +1,1 @@
+export const mainLogoSelector = state => state.mainLogoReducer;

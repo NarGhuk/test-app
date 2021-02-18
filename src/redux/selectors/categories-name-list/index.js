@@ -1,1 +1,1 @@
-export const categoriesSelector = state => state.categoriesReducer.data.cats;
+export const categoriesListNameSelector = state => state.categoriesListName.data.cats;

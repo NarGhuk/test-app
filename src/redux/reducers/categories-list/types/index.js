@@ -1,1 +1,1 @@
-export const CATEGORIES = 'CATEGORIES';
+export const CATEGORIES_LIST = 'CATEGORIES_LIST';

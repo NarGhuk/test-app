@@ -1,8 +1,6 @@
-import {CATEGORIES} from "./types";
+import {CATEGORIES_LIST} from "./types";
 import createAsyncReducer from '../../helper/asyncReducer';
 
-const initialState = {
-    cats: []
-};
-const categoriesReducer = createAsyncReducer(CATEGORIES, initialState);
-export default categoriesReducer;
+const initialState = {};
+const categoriesList = createAsyncReducer(CATEGORIES_LIST, initialState);
+export default categoriesList;

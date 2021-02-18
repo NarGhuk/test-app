@@ -1,12 +1,12 @@
-import {SHARID_TYPES} from '../sharid/actionTypes'
+import {COMON_TYPES} from '../comonTypes'
 
 const createAsyncReducer = (prefix, initialState) => (state = { isLoading: true, data: initialState }, action) => {
     const { type } = action;
     switch ( type ) {
-        case `${prefix}_${SHARID_TYPES.PENDING}`:
-
+        case `${prefix}_${COMON_TYPES.PENDING}`:
             return { data: state.data, isLoading: true, error: null, };
-        case `${prefix}_${SHARID_TYPES.DONE}`:
+
+        case `${prefix}_${COMON_TYPES.DONE}`:
 
             return {
                 ...state,
@@ -14,7 +14,7 @@ const createAsyncReducer = (prefix, initialState) => (state = { isLoading: true,
                 isLoading: false,
                 error: null
             };
-        case `${prefix}_${SHARID_TYPES.REJECTED}`:
+        case `${prefix}_${COMON_TYPES.REJECTED}`:
             return {
                 ...state,
                 data: {},

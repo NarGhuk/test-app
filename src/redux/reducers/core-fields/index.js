@@ -1,9 +1,7 @@
-import {GET_LOGO} from "./types";
+import {GET_CORE_FIELDS} from "./types";
 import createAsyncReducer from '../../helper/asyncReducer'
 
-const initialState = {
-    logo: ''
-};
-const mainLogoReducer = createAsyncReducer(GET_LOGO, initialState);
+const initialState = {};
+const mainLogoReducer = createAsyncReducer(GET_CORE_FIELDS, initialState);
 
 export default mainLogoReducer;

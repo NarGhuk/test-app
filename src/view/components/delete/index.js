@@ -27,26 +27,14 @@ const UserContact = () => {
 
     const {contactIsOpen, toggleContact} = useContextData();
     const [fields, setFields] = useState({
-        firsName: '',
         lastName: '',
-        company: '',
-        jobTitle: '',
-        email: '',
-        emailValid: false,
-        agree: null,
-        checked: false
     });
     const [isValidForm, setIsValidForm] = useState(true);
 
     useEffect(() => {
-        if (!!fields.firsName &&
+        if (
             !!fields.lastName &&
-            !!fields.company &&
-            !!fields.jobTitle &&
-            !!fields.emailValid &&
-            !!fields.agree &&
-            !!fields.checked
-        ) {
+        ){
             setIsValidForm(false)
         } else {
             setIsValidForm(true)
@@ -83,42 +71,19 @@ const UserContact = () => {
         }));
     };
 
+    const validationSchema = Yup.object({
+        lastNname: Yup.string("Enter a name").required("Name is required"),
+    });
 
     return isLoading ? <CircularProgress color="inherit"/> :
-        <ContactForm
-            contactIsOpen={contactIsOpen}
-            toggleContact={toggleContact}
-            emailValidation={emailValidation}
-            handleChange={handleChange}
-            handleReset={handleReset}
-            fields={fields}
-            isValidForm={isValidForm}
-            fieldsData={fieldsData}
+        <Formik
+            render={props => <ContactForm {...props} />}
+            initialValues={values}
+            validationSchema={isValidForm}
+            onSubmit={this.submit}
         />
+
 
 
 };
 export default UserContact;
-
-// export default function(values) {
-//     const errors = {};
-//     const requiredFields = [
-//         'firstName',
-//         'lastName',
-//         'email',
-//         'favoriteColor',
-//         'notes',
-//     ];
-//     requiredFields.forEach(field => {
-//         if (!values[field]) {
-//             errors[field] = 'Required';
-//         }
-//     });
-//     if (
-//         values.email &&
-//         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
-//     ) {
-//         errors.email = 'Invalid email address';
-//     }
-//     return errors;
-// }

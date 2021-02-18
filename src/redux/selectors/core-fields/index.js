@@ -1,0 +1,1 @@
+export const coreFields = state => state.coreFields;
