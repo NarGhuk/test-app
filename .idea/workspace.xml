@@ -2,45 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="133b4161-59cd-4194-b932-dd26f4a52596" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/helper/asyncReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/helper/asyncReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/categories-list/action/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/categories-list/action/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/categories-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/categories-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/categories-list/types/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/categories-list/types/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/categories-name/action/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/categories-name/action/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/company-logo/action/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/company-logo/action/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/company-logo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/company-logo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/company-logo/types/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/company-logo/types/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/core-fields/action/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/core-fields/action/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/core-fields/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/core-fields/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/core-fields/types/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/core-fields/types/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/thumbnailUrls/action/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/thumbnailUrls/action/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/thumbnailUrls/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/thumbnailUrls/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/thumbnailUrls/types/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/thumbnailUrls/types/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/selectors/allCategoriesList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors/allCategoriesList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/selectors/categories-name-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors/categories-name-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/selectors/core-fields/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors/core-fields/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/selectors/main-logo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors/main-logo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/selectors/thumbnailUrls/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors/thumbnailUrls/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/http-api.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/http-api.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/cards-cadegories/container/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/cards-cadegories/container/card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/cards-cadegories/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/cards-cadegories/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/cards-cadegories/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/cards-cadegories/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/contact-info/container/fields.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/contact-info/container/contactModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/contact-info/container/contactModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/contact-info/delete.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/contact-info/delete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/contact-info/delete.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/components/contact-info/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/contact-info/helpers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/components/contact-info/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/contact-info/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/delete/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/delete/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/left-categories-sidbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/left-categories-sidbar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -80,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="31" column="40" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="40" />
+            <state relative-caret-position="1008">
+              <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -125,20 +92,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-871">
-              <caret line="19" column="40" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="280">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/fields.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="234">
+              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,22 +114,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/helpers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="19" />
-              <folding>
-                <marker date="1613681353290" expanded="false" signature="625:930" ph="..." />
-              </folding>
+            <state>
+              <caret column="63" selection-start-column="63" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/delete.js">
+        <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/contactModal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="276" column="24" selection-start-line="276" selection-start-column="24" selection-end-line="276" selection-end-column="24" />
+            <state relative-caret-position="-83">
+              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
               <folding>
-                <element signature="e#0#33#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -207,8 +172,8 @@
       <find>fieldsData</find>
       <find>contactIsOpen</find>
       <find>onSubmit</find>
-      <find>conso</find>
       <find>createStore</find>
+      <find>conso</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -228,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/view/components/contact-info/container/contactModal.js" />
         <option value="$PROJECT_DIR$/src/services/http-api.service.js" />
         <option value="$PROJECT_DIR$/src/view/components/cards/index.js" />
         <option value="$PROJECT_DIR$/src/redux/reducers/categories-list/types/index.js" />
@@ -274,11 +238,12 @@
         <option value="$PROJECT_DIR$/src/view/components/left-categories-sidbar/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/view/components/contact-info/delete.js" />
-        <option value="$PROJECT_DIR$/src/view/components/contact-info/helpers/index.js" />
-        <option value="$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js" />
         <option value="$PROJECT_DIR$/src/view/components/cards-cadegories/index.js" />
-        <option value="$PROJECT_DIR$/src/view/components/contact-info/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/view/components/contact-info/helpers/index.js" />
+        <option value="$PROJECT_DIR$/src/view/components/contact-info/index.js" />
+        <option value="$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js" />
+        <option value="$PROJECT_DIR$/src/view/components/contact-info/container/fields.js" />
       </list>
     </option>
   </component>
@@ -304,6 +269,45 @@
               <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-info" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-info" type="462c0819:PsiDirectoryNode" />
+              <item name="container" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-info" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -394,18 +398,18 @@
       <option name="presentableId" value="Default" />
       <updated>1613201021289</updated>
       <workItem from="1613201022472" duration="24631000" />
-      <workItem from="1613319414553" duration="157729000" />
+      <workItem from="1613319414553" duration="159948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182360000" />
+    <option name="totallyTimeSpent" value="184579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.497006" visible="true" weight="0.19717261" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.497006" visible="true" weight="0.19717261" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.502994" side_tool="true" weight="0.19717261" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -420,7 +424,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3288889" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" weight="0.32993197" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2840136" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.05102041" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -451,13 +455,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/http-api.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -754,16 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/contactModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/delete.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -791,30 +778,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/helpers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="19" />
-          <folding>
-            <marker date="1613681353290" expanded="false" signature="625:930" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="20" column="8" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -845,16 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-871">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -868,9 +825,54 @@
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/contactModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/helpers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="63" selection-start-column="63" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/fields.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

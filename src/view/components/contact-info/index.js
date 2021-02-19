@@ -4,73 +4,55 @@ import {useContextData} from '../../../context';
 import {useSelector} from 'react-redux';
 import {coreFields} from '../../../redux/selectors/core-fields';
 import {CircularProgress, Dialog} from '@material-ui/core';
-import {Formik} from "formik";
-import * as Yup from 'yup';
+import {getFieldName} from './helpers';
+import { Formik, Form } from "formik";
+import * as yup from "yup";
 import {DialogTitle} from './container/contactModal';
 
 const UserContact = () => {
     const {data: {appFields}, isLoading} = useSelector((state) => coreFields(state));
     const {contactIsOpen, toggleContact} = useContextData();
 
+    if (isLoading) return null;
 
-    const validationSchema = Yup.object({
-        name: Yup.string("Enter a name").required("Name is required"),
-        email: Yup.string("Enter your email")
-            .email("Enter a valid email")
-            .required("Email is required"),
+    const formSchema = {};
+    appFields.forEach((field) => {
+        if (field.required) {
+            const fieldName = getFieldName(field.name);
+
+            if (["text", "textarea", "radio"].includes(field.type))
+                formSchema[fieldName] = yup.string().required();
+            else if (field.type === "email")
+                formSchema[fieldName] = yup.string().email().required();
+            else if (field.type === "checkbox") {
+                formSchema[fieldName] = !!field.options.length
+                    ? yup.array().min(1, "This field is required").required()
+                    : yup.bool().oneOf([true], "This field is required");
+            }
+        }
     });
-    const values = {name: "", email: "",};
-// name, title, type, required, options
-    console.log('---',appFields);
+    const validationSchema = yup.object().shape(formSchema);
+
+    const initialValues = appFields.reduce((prev, curr) => {
+        prev[getFieldName(curr.name)] = "";
+        return prev;
+    }, {});
     return isLoading ? <CircularProgress color="inherit"/> :
         <Dialog open={contactIsOpen} onClose={toggleContact()} aria-labelledby="form-dialog-title">
             <DialogTitle id="customized-dialog-title" onClose={toggleContact()}>
                 Modal title
             </DialogTitle>
             <Formik
-                render={props => <ContactForm {...props} />}
-                initialValues={appFields}
                 validationSchema={validationSchema}
-                appFields={appFields}
-            />
+                initialValues={initialValues}
+                validateOnMount
+            >
+                {(props) => (
+                    <Form>
+                        <ContactForm appFields={appFields} />
+                    </Form>
+                )}
+            </Formik>
         </Dialog>
 };
 export default UserContact;
-
-
-//todo  delete comment
-
-{/*<TextField*/
-}
-{/*name="confirmPassword"*/
-}
-{/*helperText={touched.confirmPassword ? errors.confirmPassword : ""}*/
-}
-{/*error={Boolean(errors.confirmPassword)}*/
-}
-{/*label="Confirm Password"*/
-}
-{/*fullWidth*/
-}
-{/*type="password"*/
-}
-{/*value={confirmPassword}*/
-}
-{/*onChange={handleChange}*/
-}
-{/*InputProps={{*/
-}
-{/*startAdornment: (*/
-}
-{/*<InputAdornment position="start">*/
-}
-{/*<LockIcon />*/
-}
-{/*</InputAdornment>*/
-}
-{/*)*/
-}
-{/*}}*/
-}
-{/*/>*/
-}
