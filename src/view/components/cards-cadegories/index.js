@@ -30,7 +30,7 @@ const Categories = ({toggleCard, selectedCards}) => {
     return !isLoading && !isThumbnai && (
         <div className="cards-row">
             {
-                !currentCutName ?
+                (!currentCutName  ||  currentCutName === 'All' )?
                 listContent.length && (filterBySearchName(searchName, listContent)).map((item) => {
                        const {url} =  thumbnailUrls.find(({id})=> item.id === id);
                     return (

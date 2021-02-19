@@ -1,1 +1,1 @@
-export const categoriesListNameSelector = state => state.categoriesListName.data.cats;
+export const categoriesListNameSelector = state => [ {name:'All'},...state.categoriesListName.data.cats];
