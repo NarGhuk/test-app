@@ -27,25 +27,17 @@ const Field = ({fieldData}) => {
         if (fieldData.type === "radio") {
             return (
                 <>
-                    <RadioGroup aria-label={fieldData.title}
-                                name={fieldData.name}
-                                value={fieldData.value}
-                                >
-                        {fieldData.options.map((option) => (
-
-                            <FormControlLabel
-                            key={option.key}
-                            defaultValue={fieldName}
-                            name={fieldName}
-                            value={option.value}
-                            label={option.key}
-                            control={<Radio/>}
+                    {fieldData.options.map((option) => (
+                        <label>
+                            {option.key}
+                            <FormikField
+                                key={option.key}
+                                type={fieldData.type}
+                                name={fieldName}
+                                value={option.value}
                             />
-                        ))}
-
-
-                    </RadioGroup>
-
+                        </label>
+                    ))}
                 </>
             );
         }
@@ -98,52 +90,3 @@ const Field = ({fieldData}) => {
 };
 
 export default Field;
-//
-
-
-//         <FormControlLabel
-//             control={
-//                 <Checkbox
-//                     checked={el.checked}
-//                     onChange={handleChange}
-//                     name="checked"
-//                     color="primary"
-//                 />
-//
-//             }
-//             label={el.title}
-//         />
-
-
-//         <TextField
-//             error={Boolean(errors.name)}
-//             autoFocus
-//             margin="dense"
-//             id={fieldData.title}
-//             label={fieldData.title}
-//             type={fieldData.type}
-//             name={fieldData.name}
-//             value={fieldData.email}
-//             fullWidth
-//             onChange={handleChange}
-//             // validators={['required']}
-//         />
-
-//
-//
-//     <Grid item xs={6}>
-//         <TextField
-//             error={Boolean(errors.name)}
-//             autoFocus
-//             margin="dense"
-//             id={fieldData.title}
-//             label={fieldData.title}
-//             type={fieldData.type}
-//             name={fieldData.name}
-//             value={fieldData.value}
-//             // validators={[fieldData.required]}
-//             onChange={handleChange}
-//
-//             required={fieldData.required}
-//         />
-//     </Grid>
