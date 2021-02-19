@@ -2,14 +2,9 @@ import React from 'react';
 
 import {
     DialogContentText,
-    FormControlLabel,
     DialogContent,
     DialogActions,
-    RadioGroup,
-    TextField,
-    Checkbox,
     Button,
-    Radio,
     Grid
 } from '@material-ui/core';
 import {getFieldName} from '../helpers';

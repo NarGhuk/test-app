@@ -10,9 +10,11 @@ export const AppProvider = ({children}) => {
     const [isOpen, setIsOpen] = useState(false);
     const [contactIsOpen, setContactIsOpen] = useState(false);
     const [searchName, setSearchName] = useState('');
+
     const setSearchedCardsName = (ev) => setSearchName(ev.target.value);
     const toggleDrawer = () => () => setIsOpen(prev => !prev);
     const toggleContact = () => () => setContactIsOpen(prev => !prev);
+
     return (
         <AppContext.Provider value={{
             visible: isOpen,

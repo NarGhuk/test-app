@@ -23,7 +23,7 @@ const Categories = () => {
         listContent = [].concat.apply([], result);
     }
      const filterBySearchName = (searchName, arr)=> {
-        return searchName ? arr.filter(item=> item.name === searchName) : arr
+        return searchName ? arr.filter(item => item.name.toLowerCase().indexOf(searchName.toLowerCase()) !== -1) : arr
      };
 
     return !isLoading && !isThumbnai && (
