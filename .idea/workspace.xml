@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="133b4161-59cd-4194-b932-dd26f4a52596" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/view/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/cards-cadegories/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/cards-cadegories/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/view/components/header/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="201">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -102,7 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cats</find>
       <find>console.lo</find>
       <find>expanded</find>
       <find>disptch</find>
@@ -132,6 +131,7 @@
       <find>conso</find>
       <find>Field</find>
       <find>currentCutName</find>
+      <find>cards-row</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -180,7 +180,6 @@
         <option value="$PROJECT_DIR$/src/redux/reducers/thumbnailUrls/action/index.js" />
         <option value="$PROJECT_DIR$/src/redux/reducers/thumbnailUrls/index.js" />
         <option value="$PROJECT_DIR$/src/redux/selectors/thumbnailUrls/index.js" />
-        <option value="$PROJECT_DIR$/src/view/components/cards-cadegories/style.css" />
         <option value="$PROJECT_DIR$/src/redux/reducers/appFilds/types/index.js" />
         <option value="$PROJECT_DIR$/src/redux/reducers/appFilds/index.js" />
         <option value="$PROJECT_DIR$/src/redux/reducers/appFilds/action/index.js" />
@@ -202,6 +201,7 @@
         <option value="$PROJECT_DIR$/src/redux/reducers/uiReduserCurrentCat/index.js" />
         <option value="$PROJECT_DIR$/src/view/components/cards-cadegories/index.js" />
         <option value="$PROJECT_DIR$/src/view/components/header/index.js" />
+        <option value="$PROJECT_DIR$/src/view/components/cards-cadegories/style.css" />
       </list>
     </option>
   </component>
@@ -338,16 +338,15 @@
       <option name="presentableId" value="Default" />
       <updated>1613201021289</updated>
       <workItem from="1613201022472" duration="24631000" />
-      <workItem from="1613319414553" duration="170918000" />
+      <workItem from="1613319414553" duration="171633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195549000" />
+    <option name="totallyTimeSpent" value="196264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.497006" visible="true" weight="0.13962065" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -835,8 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/components/header/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="201">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
