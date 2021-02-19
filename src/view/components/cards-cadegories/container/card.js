@@ -13,7 +13,7 @@ export default function MediaCard({data:{name,image},url}) {
                 </div>
                 </a>
                 <div className="card-actions">
-                    <button type='button' className='card-action-readMore'>Read More</button>
+                    <button type='button' className='card-action-readMore'>Add</button>
                 </div>
             </div>
     );
