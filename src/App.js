@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import {useDispatch} from 'react-redux';
 import {AppProvider} from './context';
 import {fetchCategoriesList} from './redux/reducers/categories-list/action';
@@ -23,13 +23,29 @@ function App() {
 
     }, [dispatch]);
 
+    const [state, setState] = useState([]);
+
+    const toggleCard = useCallback((id) => {
+        setState((prevState => {
+            const index = prevState.findIndex(item => item === id);
+            const arrayCopy = [...prevState];
+            if (index === -1) {
+                arrayCopy.push(id)
+            } else {
+                arrayCopy.splice(index, 1)
+            }
+            return arrayCopy;
+        }))
+    }, []);
+
+
     return (
         <div className="App">
             <AppProvider>
-                <Header/>
+                <Header cardCount={state.length}/>
                 <LeftBarCategories/>
                 <UserContact/>
-                <CardCategories />
+                <CardCategories selectedCards={state} toggleCard={toggleCard} />
             </AppProvider>
 
         </div>

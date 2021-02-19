@@ -7,7 +7,8 @@ import {currentCutNameSelector} from '../../../redux/selectors/uiCurrentCut';
 import {thumbnailUrlsSelector} from '../../../redux/selectors/thumbnailUrls';
 import './style.css';
 
-const Categories = () => {
+
+const Categories = ({toggleCard, selectedCards}) => {
     const {data: {contents}, isLoading} = useSelector((state) => categoriesListSelector(state));
     const currentCutName = useSelector((state) => currentCutNameSelector(state));
     const {data:thumbnailUrls,isLoading:isThumbnai} = useSelector((state) => thumbnailUrlsSelector(state));
@@ -33,11 +34,11 @@ const Categories = () => {
                 listContent.length && (filterBySearchName(searchName, listContent)).map((item) => {
                        const {url} =  thumbnailUrls.find(({id})=> item.id === id);
                     return (
-                            <Card key={item.id} data={item} url={url}/>
+                            <Card selectedCards={selectedCards} toggleCard={toggleCard} key={item.id} data={item} url={url}/>
                     )
                 }) : filterBySearchName(searchName, contents.find(items => items['catName'] === currentCutName)['contentInf'])
                     .map((item) => (
-                            <Card key={item.id} data={item}/>
+                            <Card selectedCards={selectedCards} toggleCard={toggleCard} key={item.id} data={item}/>
                     ))
 
             }

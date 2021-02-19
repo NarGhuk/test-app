@@ -16,11 +16,10 @@ import {useSelector} from 'react-redux';
 import {useContextData} from '../../../context';
 import {mainLogoSelector} from '../../../redux/selectors/main-logo';
 
-export default function SearchAppBar() {
+export default function SearchAppBar({cardCount}) {
     const {toggleDrawer, toggleContact, setSearchedCardsName} = useContextData();
     const classes = useStyles();
     const {data: mainLogo, isLoading} = useSelector((state) => mainLogoSelector(state));
-
     return (
         <div className={classes.root}>
             <AppBar position="static">
@@ -54,6 +53,7 @@ export default function SearchAppBar() {
 
                     </div>
                     <Button
+                        disabled={ !(cardCount >= 2)}
                         variant="contained"
                         color="primary"
                         className={classes.button}
