@@ -1,7 +1,6 @@
 import React from "react";
 import {useField, Field as FormikField} from "formik";
 import {getFieldName} from "../helpers";
-import {Checkbox, FormControlLabel, Grid, Radio, RadioGroup, TextField} from '@material-ui/core';
 
 const Field = ({fieldData}) => {
     const fieldName = getFieldName(fieldData.name);
