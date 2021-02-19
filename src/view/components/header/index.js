@@ -22,7 +22,7 @@ export default function SearchAppBar({cardCount}) {
     const {data: mainLogo, isLoading} = useSelector((state) => mainLogoSelector(state));
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <Toolbar>
                     <IconButton
                         edge="start"
