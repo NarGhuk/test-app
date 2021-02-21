@@ -27,7 +27,7 @@ const Field = ({fieldData}) => {
             return (
                 <>
                     {fieldData.options.map((option) => (
-                        <label>
+                        <label key={option.key} >
                             {option.key}
                             <FormikField
                                 key={option.key}
@@ -49,7 +49,7 @@ const Field = ({fieldData}) => {
             return (
                 <>
                     {fieldData.options.map((option) => (
-                        <label>
+                        <label key={option.key}>
                             {option.key}
                             <FormikField
                                 key={option.key}

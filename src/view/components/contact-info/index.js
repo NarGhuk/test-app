@@ -1,18 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import ContactForm from './container/contactForm';
 import {useContextData} from '../../../context';
 import {useSelector} from 'react-redux';
 import {coreFields} from '../../../redux/selectors/core-fields';
 import {CircularProgress, Dialog} from '@material-ui/core';
 import {getFieldName} from './helpers';
-import { Formik, Form } from "formik";
+import {Formik, Form} from "formik";
 import * as yup from "yup";
 import {DialogTitle} from './container/contactModal';
 
 const UserContact = () => {
     const {data: {appFields}, isLoading} = useSelector((state) => coreFields(state));
     const {contactIsOpen, toggleContact} = useContextData();
-
+    const [isSuccess, setIsSuccess] = useState(false);
     if (isLoading) return null;
 
     const formSchema = {};
@@ -46,10 +46,13 @@ const UserContact = () => {
                 validationSchema={validationSchema}
                 initialValues={initialValues}
                 validateOnMount
+                onSubmit={() => setIsSuccess(true)}
             >
                 {(props) => (
                     <Form>
-                        <ContactForm appFields={appFields} />
+                        <ContactForm appFields={appFields}
+                                     isSuccess={isSuccess}
+                                     setIsSuccess={setIsSuccess}/>
                     </Form>
                 )}
             </Formik>

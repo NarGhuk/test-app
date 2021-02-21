@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="133b4161-59cd-4194-b932-dd26f4a52596" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/cards-cadegories/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/cards-cadegories/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/cards-cadegories/container/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/cards-cadegories/container/card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/contact-info/container/fields.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/contact-info/container/fields.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/contact-info/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/contact-info/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/components/left-categories-sidbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/left-categories-sidbar/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,11 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-408">
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -33,20 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/view/components/left-categories-sidbar/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="51" column="80" selection-start-line="51" selection-start-column="80" selection-end-line="51" selection-end-column="80" />
+            <state relative-caret-position="170">
+              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -55,10 +41,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/helper/asyncReducer.js">
+        <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/contactModal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="126">
+              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/components/cards-cadegories/container/card.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/components/left-categories-sidbar/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/components/cards-cadegories/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -90,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/fields.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-609">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="-450">
+              <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
@@ -109,18 +128,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/components/cards-cadegories/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -133,12 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>expanded</find>
-      <find>disptch</find>
-      <find>useDispatch</find>
-      <find>setCategoriesNam</find>
-      <find>dispatch</find>
-      <find>setCategoriesName</find>
       <find>useDrawer</find>
       <find>fields</find>
       <find>isLoading</find>
@@ -163,6 +164,12 @@
       <find>cards-row</find>
       <find>img</find>
       <find>currentCutName</find>
+      <find>target</find>
+      <find>Form</find>
+      <find>Form</find>
+      <find>Field</find>
+      <find>getFieldName</find>
+      <find>selectedIndex</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -172,8 +179,8 @@
       <dir>C:\Learn\my-app\src\context</dir>
       <dir>C:\Learn\my-app\src\view\components</dir>
       <dir>C:\Learn\my-app\src\view</dir>
-      <dir>C:\Learn\my-app\src\view\components\contact-info</dir>
       <dir>C:\Learn\my-app\src</dir>
+      <dir>C:\Learn\my-app\src\view\components\contact-info</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -221,7 +228,6 @@
         <option value="$PROJECT_DIR$/src/view/components/contact-info/delete.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/view/components/contact-info/helpers/index.js" />
-        <option value="$PROJECT_DIR$/src/view/components/contact-info/index.js" />
         <option value="$PROJECT_DIR$/src/context/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/redux/selectors/categories-name-list/index.js" />
@@ -229,9 +235,10 @@
         <option value="$PROJECT_DIR$/src/view/components/header/index.js" />
         <option value="$PROJECT_DIR$/src/view/components/cards-cadegories/index.js" />
         <option value="$PROJECT_DIR$/src/view/components/cards-cadegories/style.css" />
+        <option value="$PROJECT_DIR$/src/view/components/contact-info/index.js" />
         <option value="$PROJECT_DIR$/src/view/components/cards-cadegories/container/card.js" />
-        <option value="$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js" />
         <option value="$PROJECT_DIR$/src/view/components/contact-info/container/fields.js" />
+        <option value="$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js" />
         <option value="$PROJECT_DIR$/src/view/components/left-categories-sidbar/index.js" />
       </list>
     </option>
@@ -371,12 +378,12 @@
       <workItem from="1613201022472" duration="24631000" />
       <workItem from="1613319414553" duration="181277000" />
       <workItem from="1613832094978" duration="32000" />
-      <workItem from="1613832192787" duration="10049000" />
+      <workItem from="1613832192787" duration="11890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215989000" />
+    <option name="totallyTimeSpent" value="217830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -468,13 +475,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/ListItemText/ListItemText.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="62" column="2" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/components/header/makeStyles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -688,16 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/contactModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/reducers/uiReduserCurrentCat/action-types/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -739,20 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/components/cards-cadegories/container/card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/components/cards-cadegories/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/components/header/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -767,16 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -800,6 +766,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/http-api.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/components/cards-cadegories/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/reducers/categories-list/action/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -810,17 +790,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/http-api.service.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/formik/dist/types.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/components/cards-cadegories/container/card.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/contactModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/fields.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-609">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="-450">
+          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
@@ -828,20 +842,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/components/contact-info/container/contactForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/components/left-categories-sidbar/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="51" column="80" selection-start-line="51" selection-start-column="80" selection-end-line="51" selection-end-column="80" />
+        <state relative-caret-position="161">
+          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

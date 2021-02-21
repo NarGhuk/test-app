@@ -21,7 +21,7 @@ export default function LeftBarCategories() {
     const classes = useStyles();
     const {toggleDrawer, visible} = useContextData();
     const categoriseList = useSelector((state) => categoriesListNameSelector(state));
-    const [selectedIndex, setSelectedIndex] = React.useState(1);
+    const [selectedIndex, setSelectedIndex] = React.useState(0);
 
     const handleListItemClick = (event, index) => {
         setSelectedIndex(index);

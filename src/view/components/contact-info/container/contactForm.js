@@ -7,11 +7,10 @@ import {
     Button,
     Grid
 } from '@material-ui/core';
-import {getFieldName} from '../helpers';
 import {useFormikContext} from 'formik';
 import Field from './fields';
 
-const ContactForm = ({appFields}) => {
+const ContactForm = ({appFields,isSuccess,setIsSuccess}) => {
     const formik = useFormikContext();
 
     return (
@@ -23,8 +22,8 @@ const ContactForm = ({appFields}) => {
                 </DialogContentText>
 
                 <Grid container alignItems="flex-start" spacing={2}>
-                    {appFields.map((field) => (
-                        <Grid item xs={6} key={getFieldName(field.name)}>
+                    {appFields.map((field,index) => (
+                        <Grid item xs={6} key={index}>
                             <Field  fieldData={field} />
                         </Grid>
                     ))}
@@ -34,7 +33,11 @@ const ContactForm = ({appFields}) => {
             </DialogContent>
 
             <DialogActions>
-                <Button onClick={formik.handleReset} color="secondary">
+                 { isSuccess && <p>validation went successfully.</p>}
+                <Button onClick={()=>{
+                    formik.handleReset();
+                    setIsSuccess(false)
+                }} color="secondary">
                     Reset
                 </Button>
 

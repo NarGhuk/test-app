@@ -4,7 +4,7 @@ export default function MediaCard({data:{name,image,id},url, toggleCard, selecte
 
     return (
             <div className="card">
-                <a href={url} target="_blank">
+                <a href={url} target="_blank" rel="noreferrer">
                 <img src={image} className="card-image" alt={''}/>
                 <div className="card-desc">
                     {name}
