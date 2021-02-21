@@ -24,7 +24,9 @@ const ContactForm = ({appFields}) => {
 
                 <Grid container alignItems="flex-start" spacing={2}>
                     {appFields.map((field) => (
-                        <Field key={getFieldName(field.name)} fieldData={field} />
+                        <Grid item xs={6} key={getFieldName(field.name)}>
+                            <Field  fieldData={field} />
+                        </Grid>
                     ))}
                 </Grid>
 

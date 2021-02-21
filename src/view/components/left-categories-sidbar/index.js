@@ -21,6 +21,11 @@ export default function LeftBarCategories() {
     const classes = useStyles();
     const {toggleDrawer, visible} = useContextData();
     const categoriseList = useSelector((state) => categoriesListNameSelector(state));
+    const [selectedIndex, setSelectedIndex] = React.useState(1);
+
+    const handleListItemClick = (event, index) => {
+        setSelectedIndex(index);
+    };
 
     return (
         <div className={classes.root}>
@@ -41,9 +46,13 @@ export default function LeftBarCategories() {
                 </div>
                 <Divider/>
                 <List>
-                    {categoriseList.map((item) => (
-                        <ListItem button key={item.name}>
-                            <ListItemText primary={item.name} onClick={() => dispatch(setCurrentCut(item.name))}/>
+                    {categoriseList.map((item,index) => (
+                        <ListItem
+                            selected={selectedIndex === index}
+                            onClick={(event) => handleListItemClick(event, index)}
+                            button key={item.name}>
+                            <ListItemText primary={item.name}
+                                          onClick={() => dispatch(setCurrentCut(item.name))}/>
                         </ListItem>
                     ))}
                 </List>
